@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="carousel">
-    <ul class="carousel__list">
-      <li class="carousel__item" data-pos="-2">1</li>
-      <li class="carousel__item" data-pos="-1">2</li>
-      <li class="carousel__item" data-pos="0">3</li>
-      <li class="carousel__item" data-pos="1">4</li>
-      <li class="carousel__item" data-pos="2">5</li>
-    </ul>
-  </div>
+<label>
+  <input type="checkbox" onchange="changeTheme(this.checked)">
+  Включить темную тему
+</label>
+<script>
+  function changeTheme(isChecked) {
+    if (isChecked) {
+      document.body.setAttribute('dark', '');
+    } else {
+      document.body.removeAttribute('dark');
+    }
+  }
+</script>
     <script src="script.js"></script>
 </body>
 </html>
