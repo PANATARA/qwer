@@ -5,15 +5,13 @@
 
 
 
-<!-- Yandex.RTB R-A-2268186-1 --><div class=inpostad id=yandex_rtb_R-A-2268186-4-10></div>
+<!-- Yandex.RTB R-A-2268186-1 --><div class=inpostad id=yandex_rtb_R-A-2268186-4-20></div>
 
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --var-bgcolor: #333;
-    --var-fontcolor: #eee;
-  }
+[dark] {
+  --var-bgcolor: #333;
+  --var-fontcolor: #eee;
 }
 
 body {
