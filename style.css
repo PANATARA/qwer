@@ -1,20 +1,94 @@
-:root {
-  --var-bgcolor: #fff;
-  --var-fontcolor: #000;
+/* .section_item:hover{
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+    box-shadow: none;
+  } */
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: auto; */
+    height: 800px;
+    width: 200px;
+    /* overflow: hidden; */
+    position: fixed;
+    top: 17%;
+    margin-left: 0%;
+    transition: 1s;
+
+    }
+    .section_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 150px;
+    height: 200px;
+    font-size: 1.59vw;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: 0.5s;
+    background: linear-gradient(to top, hsl(224, 72%, 30%), hsl(9, 76%, 36%));
+    box-shadow: 0 0 10px rgba(26, 25, 25, 0.6);
+  }
+
+.item1{
+    z-index: +7;
+    margin-top: 0px;
+    /* scale: 1; */
+}
+.item2{
+    z-index: +6;
+    margin-top: -80px;
+    /* scale: 0.97; */
+}
+.item3{
+    z-index: +5;
+    margin-top: -90px;
+    /* scale: 0.94; */
+}
+.item4{
+    z-index: +4;
+    margin-top: -110px;
+    /* scale: 0.91; */
+}
+.item5{
+    z-index: +3;
+    margin-top: -120px;
+    /* scale: 0.88; */
+}
+.item6{
+    z-index: +2;
+    margin-top: -125px;
+    /* scale: 0.85; */
+}
+.item7{
+    z-index: +1;
+    margin-top: -135px;
+    /* scale: 0.82; */
 }
 
 
 
-<!-- Yandex.RTB R-A-2268186-1 --><div class=inpostad id=yandex_rtb_R-A-2268186-4-20></div>
 
 
 
-[dark] {
-  --var-bgcolor: #333;
-  --var-fontcolor: #eee;
-}
 
-body {
-  background-color: var(--var-bgcolor);
-  color: var(--var-fontcolor);
-}
+
+
+
+
+
+
+
+
+  .section::-webkit-scrollbar {
+    width: 0.5em; 
+    background-color: transparent;
+  }
+  
+  .section::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
