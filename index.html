@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Красивый чекбокс</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-    <input>
-<label>
-  <input type="checkbox" onchange="changeTheme(this.checked)">
-  Включить темную тему
-</label>
-<script>
-  function changeTheme(isChecked) {
-    if (isChecked) {
-      document.body.setAttribute('dark', '');
-    } else {
-      document.body.removeAttribute('dark');
-    }
-  }
-</script>
-    <script src="script.js"></script>
+  <div class="section" id="qwerty">
+    <div class="section_item item1" id="Animals" onclick="changeText('Animals')">Animals</div>
+    <div class="section_item item2" id="People" onclick="changeText('People')">People</div>
+    <div class="section_item item3" id="Nature" onclick="changeText('Nature')">Nature</div>
+    <div class="section_item item4" id="inventions" onclick="changeText('inventions')">inventions</div>
+    <div class="section_item item5" id="Facts" onclick="changeText('Facts')">Facts</div>
+    <div class="section_item item6" id="literature" onclick="changeText('literature')">literature</div>
+    <div class="section_item item7" id="History" onclick="changeText('History')">History</div>
+</div>
+<button onclick="upItem()">UP</button>
+<button onclick="downItem()">Down</button>
+  <script src="script.js"></script>
 </body>
+
 </html>
